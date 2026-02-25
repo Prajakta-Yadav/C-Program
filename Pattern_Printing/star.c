@@ -2,15 +2,24 @@
 
 int main(){
     
-    int n;
+    int i, j;
 
-    printf("Enter a number");
-    scanf("%d", &n);
-    
-    for(int i=1;i<=n;i++){
-        for (int j=i; j>=i; j++){
-            printf("%d",j);
+   // printf("Enter a number");
+    //scanf("%d", &n);
+    /*
+    for(i=1; i<=4;i++){
+        for(j=1;j<4;j++){
+            printf("*");
         }
-        printf("%d", i);
+         printf("*\n");
+    }   */
+
+    for (i=1; i<=4; i++){
+        for(j=1; j<4; j++){
+            if(i==1 ||  j==1 || i==4 ||j==4){
+                printf("*");
+            }
+        }
     }
+    
 }
